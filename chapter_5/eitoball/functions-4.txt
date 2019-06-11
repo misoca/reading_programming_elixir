@@ -1,0 +1,8 @@
+iex(1)> prefix = fn p -> fn n -> "#{p} #{n}" end end
+#Function<7.91303403/1 in :erl_eval.expr/5>
+iex(2)> mrs = prefix.("Mrs")
+#Function<7.91303403/1 in :erl_eval.expr/5>
+iex(3)> mrs.("Smith")
+"Mrs Smith"
+iex(4)> prefix.("Elixir").("Rocks")
+"Elixir Rocks"
