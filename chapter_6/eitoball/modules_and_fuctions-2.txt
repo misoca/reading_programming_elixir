@@ -1,0 +1,13 @@
+Interactive Elixir (1.8.2) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> Times.triple(3)
+9
+iex(2)> c("chapter_6/eitoball/times.ex")
+warning: redefining module Times (current version defined in memory)
+  chapter_6/eitoball/times.ex:1
+
+Times
+iex(3)> Times.triple(4)
+iex(4)> Times.triple("cat")
+ (ArithmeticError) bad argument in arithmetic expression: "cat" * 3
+  :erlang.*("cat", 3)
+  chapter_6/eitoball/times.ex:2: Times.triple/1
