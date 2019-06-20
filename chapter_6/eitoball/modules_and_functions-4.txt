@@ -1,0 +1,16 @@
+iex(2)> c("chapter_6/eitoball/summation.ex")
+[Summation]
+iex(3)> Summation.of(0)
+0
+ex(4)> Summation.of(0)
+1
+iex(5)> Summation.of(1)
+3
+iex(6)> Summation.of(2)
+15
+iex(7)> Summation.of(5)
+55
+iex(8)> Summation.of(10)
+5050
+iex(9)> Summation.of(100)
+500500
