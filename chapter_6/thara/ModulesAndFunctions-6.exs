@@ -1,6 +1,5 @@
 defmodule Chop do
-  def guess(actual, range) do
-    (min..max) = range
+  def guess(actual, (min..max) = range) do
     center = div(max + min, 2)
     IO.puts "Is it #{center}"
     find(actual, range, center)
@@ -10,15 +9,11 @@ defmodule Chop do
     n
   end
 
-  def find(actual, range, n) when actual < n do
-    (min.._) = range
+  def find(actual, (min.._), n) when actual < n do
     guess(actual, min..n-1)
   end
 
-  def find(actual, range, n) when actual > n do
-    (_..max) = range
+  def find(actual, (_..max), n) when actual > n do
     guess(actual, n+1..max)
   end
 end
-
-Chop.guess(273, 1..1000)
