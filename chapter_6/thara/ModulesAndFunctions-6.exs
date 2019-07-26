@@ -1,7 +1,7 @@
 defmodule Chop do
   def guess(actual, range) do
     (min..max) = range
-    center = div(max - min, 2) + min
+    center = div(max + min, 2)
     IO.puts "Is it #{center}"
     find(actual, range, center)
   end
