@@ -7,7 +7,7 @@ defmodule Chop do
   end
 
   def find(actual, _, n) when actual == n do
-    IO.puts n
+    n
   end
 
   def find(actual, range, n) when actual < n do
