@@ -1,0 +1,16 @@
+iex(1)> Enum.map [1, 2, 3, 4], fn x -> x + 2 end
+[3, 4, 5, 6]
+iex(2)> Enum.map [1, 2, 3, 4], &(&1 + 2)
+[3, 4, 5, 6]
+iex(3)> Enum.map [1, 2, 3, 4], fn x -> IO.inspect x end
+1
+2
+3
+4
+[1, 2, 3, 4]
+iex(4)> Enum.map [1, 2, 3, 4], &IO.inspect/1
+1
+2
+3
+4
+[1, 2, 3, 4]
